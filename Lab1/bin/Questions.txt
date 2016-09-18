@@ -1,0 +1,25 @@
+1.
+Some of the text is highlighted or underlined in color. What do you suppose is the significance of each of
+the colors you see?
+
+Syntax highlighting help makes the code more readable. By highlighting keywords
+and some objects, it is much easier to differentiate between different operations
+
+2.
+How is the behavior of the "return" or "enter" key different than in an ordinary editor?
+
+Pressing return or enter will maintain tabbing of the next time, or indent the cursor
+if it is going down a level in scope.
+
+3.
+What do you observe when you type an opening bracket or parenthesis, "(, {, or ["?
+
+When you type an opening bracket/parenthesis, it will also append a corresponding
+closing bracket/parenthesis and place the cursor within them.
+
+4.
+What do you observe when you type a closing bracket or parenthesis, "), }, or ]"
+
+When you type a closing bracket or parenthesis and the cursor is already over one
+it will not add an additional bracket. It will also highlight the corresponding opening
+parenthesis.

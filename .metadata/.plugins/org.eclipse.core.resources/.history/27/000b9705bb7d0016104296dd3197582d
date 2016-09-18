@@ -1,0 +1,12 @@
+/*
+ * Name: Elijah Ellis
+ * Date: 9/18/16
+ * Description: 
+ * Calculates miles per galon 
+*/
+public class MilesPerGalon {
+
+	public static void main(String[] args) {
+	}
+
+}
