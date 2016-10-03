@@ -1,0 +1,19 @@
+/*
+* Name: Elijah Ellis
+* Date: 9/26/2016
+* Description: 'Madlib': Asks the users for inputs and uses that to generate a
+* story
+*/
+
+import java.util.Scanner;
+
+public class WordGame {
+
+	public static void main(String[] args) {
+
+		// Initialize the scanner object that is used for reading user input
+		Scanner InputReader = new Scanner(System.in);
+		
+	}
+
+}

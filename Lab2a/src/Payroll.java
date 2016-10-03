@@ -11,6 +11,7 @@ public class Payroll {
 		double grossPay, payRate = 25.0;
 		
 		grossPay = hours * payRate;
+		
 		System.out.println("Your gross pay is $" + grossPay);
 	}
 
