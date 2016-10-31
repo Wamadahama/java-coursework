@@ -1,0 +1,19 @@
+/**
+ * Name: Elijah Ellis
+ * Date: Monday, October 31, 2016
+ * Description: Inventory for the tracker 
+ * */
+public class InventoryTrackerInterface {
+
+	public static void main(String[] args) {
+		// Test to see if the item class retains data
+		
+		Item itemTest = new Item("Foo", 10, 200.00, "Bar");
+		
+		System.out.println(itemTest.getName());
+		System.out.println(itemTest.getQuantity());
+		System.out.println(itemTest.getUpc());
+		System.out.println("Price: " + itemTest.getPrice());
+	}
+
+}

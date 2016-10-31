@@ -1,0 +1,49 @@
+/**
+ * Name: Elijah Ellis
+ * Date: Monday October 31 2016
+ * Description: Item class for Inventory Tracker
+ * */
+public class Inventory {
+
+  /**
+   * Maintains a collection of the items used by the program
+   */
+  private Item[] itemArray = new Item[100];
+
+  /**
+   * Maintains a count of the items in the program
+   */
+  private int totalItems = 0;
+
+  /**
+   * Returns the total number of items associated with this instance
+   */
+  public int getTotalNumberOfItems() {
+    return totalItems;
+  }
+
+
+  /**
+   * Returns an item based on the input index
+   */
+  public Item getItem(int index) {
+    return itemArray[index];
+  }
+
+  /**
+  * Adds an item to the private member 
+  */
+  public void addItem(Item newItem) {
+    itemArray[itemArray.length+1] = newItem;
+    totalItems+=1;
+  }
+
+  public void saveInventoryToFile(String fileName) {
+
+  }
+
+  public void loadInventoryFromFile(String fileName) {
+
+  }
+
+}

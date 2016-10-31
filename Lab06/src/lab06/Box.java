@@ -32,13 +32,14 @@ public class Box {
 	public Box(Box cloneMe)
 	{
 		// If the clone is none existent then stop 
-		if(cloneMe == null) return;
+		if(cloneMe == null) 
+			return;
 		
 		//Copy the attributes of cloneMe to this classes instance
 		this.width  = cloneMe.getWidth();
 		this.length = cloneMe.getLength();
 		this.height = cloneMe.getHeight();
-		this.label  = cloneMe.getLabel();
+		this.label  = cloneMe.getLabel() + " Clone";
 	}
 	
 	/**

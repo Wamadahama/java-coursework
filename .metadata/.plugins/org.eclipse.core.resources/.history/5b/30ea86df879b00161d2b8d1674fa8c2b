@@ -1,0 +1,39 @@
+/**
+ * Name: Elijah Ellis
+ * Date: Wednesday October 26, 2016
+ * Description: Running total 
+ * */
+
+import java.util.*;
+import java.math.*;
+public class RunningTotal {
+	
+	private double product = 1;
+	private double sum = 0;
+	private int totalNumbersEntered = 0; 
+	
+	public RunningTotal() {
+		
+	}
+	
+	/** This method will use a while loop to  continuously
+	 ask the user for positive numbers.  
+	.*/
+	public void getNumbersFromUser() {
+		Scanner inputReader = new Scanner(System.in);
+		while(true){ 
+			
+		}
+	}
+	
+	public double getAverage() {
+		
+	}
+	public double getProduct() {
+		
+	}
+	
+	public double getSum() {
+		
+	}
+}

@@ -1,0 +1,16 @@
+/**
+ * Name: Elijah Ellis
+ * Date: Wednesday 26, 2016
+ * Description: Converting a while loop to a for loop
+ * */
+public class ForConversion {
+	public static void main(String args[]) {
+		int loopVariable = 0;
+		
+		for (int i = 0; i < 50; i++) {
+			System.out.println("Loop iteration # " + loopVariable);
+			loopVariable++;
+		}
+		
+	}
+}

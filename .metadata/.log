@@ -1365,3 +1365,13 @@ Java Model Exception: Java Model Status [<project root> [in Lab06] is not on its
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1006 2016-10-19 15:03:33.818
 !MESSAGE <project root> [in Lab06] is not on its project's build path
+!SESSION 2016-10-27 10:16:36.048 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui.browser 2 0 2016-10-27 10:19:50.085
+!MESSAGE Internal browser is not available: No more handles [Browser style SWT.MOZILLA and Java system property org.eclipse.swt.browser.DefaultType=mozilla are not supported with GTK 3 as XULRunner is not ported for GTK 3 yet]
