@@ -30,6 +30,8 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/elijah/Development/Java/src"/>
+			<item value="/home/elijah/Development/Java"/>
 			<item value="/home/elijah/Downloads"/>
 			<item value="/home/elijah/Development/Java/Foo"/>
 			<item value="/home/elijah/Development/Java/Labs"/>

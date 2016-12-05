@@ -58,7 +58,7 @@ public class IntegerConverter {
 		String total = "";
 
 		do {
-			// Divide by two 
+			// Divide by two
 			int value = number % 2;
 
 			if (value == 1) {
@@ -70,8 +70,6 @@ public class IntegerConverter {
 			number = number / 2;
 		} while(number > 0);
 
-		
-		
 		return (new StringBuilder(total).reverse().toString());
 	}
 
@@ -122,6 +120,9 @@ public class IntegerConverter {
 			} else if (number - 90 >= 0) {
 				total += "XC";
 				number -= 90;
+			} else if (number - 50 >= 0) {
+				total += "L";
+				number -= 50;
 			} else if (number - 40 >= 0) {
 				total += "XL";
 				number -= 40;
@@ -141,7 +142,7 @@ public class IntegerConverter {
 				total += "I";
 				number -= 1;
 			}
-		} while (number > 0);
+		} while (number != 0);
 
 		return total;
 	}
