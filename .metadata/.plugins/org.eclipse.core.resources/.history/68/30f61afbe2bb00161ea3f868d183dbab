@@ -118,17 +118,7 @@ public class MainClass {
 	
 	public static void searchForWinnerByYear(int year)
 	{
-		System.out.println("Winners for the year of " + year);
-		
-		for (int i = 0; i < listOfWinners.length; i++) {
-			
-			if(listOfWinners[i].getYear() == year){
-				
-				System.out.println(listOfWinners[i].getTeam());
-				
-			}
-		
-		}
+		//Fill In Code
 	}
 	
 	public static void searchForYearsATeamWon(String team)

@@ -57,12 +57,11 @@ public class MainClass {
 			// Look through the rest of the array to see if there is a new min
 			for	(i = j+1; i < listOfWinners.length ;++i){
 			    // Create some temps so it is clear
-				String currentMin 	  = listOfWinners[min].getTeam();
-				String testMin = listOfWinners[i].getTeam();
+				String currentMin = listOfWinners[i].getTeam();
+				String testMin 	  = listOfWinners[j].getTeam();
 				
-				
-				if (currentMin.compareTo(testMin) < 0){
-					min = j;	
+				if (currentMin.compareTo(testMin) > 0){
+					min = j
 				}
 			}
 			
@@ -118,17 +117,7 @@ public class MainClass {
 	
 	public static void searchForWinnerByYear(int year)
 	{
-		System.out.println("Winners for the year of " + year);
-		
-		for (int i = 0; i < listOfWinners.length; i++) {
-			
-			if(listOfWinners[i].getYear() == year){
-				
-				System.out.println(listOfWinners[i].getTeam());
-				
-			}
-		
-		}
+		//Fill In Code
 	}
 	
 	public static void searchForYearsATeamWon(String team)
