@@ -1,21 +1,6 @@
 INDEX VERSION 1.129+/home/elijah/Development/Java/.metadata/.plugins/org.eclipse.jdt.core
-1200059097.index
-3316150269.index
-815274353.index
 3002258324.index
-2968901328.index
-3238106680.index
-1437290074.index
-59367130.index
-4056378045.index
+4067826494.index
 737903150.index
-1193164991.index
-1085184875.index
-2911121760.index
-797567809.index
 2461111003.index
-4054352036.index
 1481802836.index
-3754231982.index
-2371551087.index
-1877040381.index

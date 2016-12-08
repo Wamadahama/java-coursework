@@ -1,0 +1,24 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.text.DecimalFormat;
+/**
+ * Elijah Ellis
+ * Thursday December 8 2016
+ * About page 
+ * */
+public class AboutPageFrame extends JFrame {
+	public AboutPageFrame(){
+		  try{ 
+			  
+			  UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
+			  SwingUtilities.updateComponentTreeUI(this);
+			  
+		  } catch (Exception e) {
+			  
+			  JOptionPane.showMessageDialog(null, "Error setting the look and feel");
+			  System.exit(0);
+			  
+		  }
+	}
+}
