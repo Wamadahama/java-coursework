@@ -1,0 +1,16 @@
+/**
+ * @author Elijah Ellis
+ * Thursday December 8th 2016
+ * LoShuMagic 
+ */
+public class LoShuMagic {
+	// Test method, checks the conditions of a Lo Shu Magic Square 
+	public boolean test(int[][] array) {
+		// Test the array for one through nine 
+		for (int i = 0; i < array[0].length; i++) {
+			for (int j = 0; j < array[i].length; j++) {
+				
+			}
+		}
+	}
+}
