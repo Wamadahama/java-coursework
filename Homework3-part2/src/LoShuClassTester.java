@@ -26,15 +26,15 @@ public class LoShuClassTester {
 		{
 			System.out.println("Test 1 failed");
 		}
-//		matrix[0][1] = 10;
-//		
-//		if(lsm.test(matrix)==false)
-//		{
-//			System.out.println("Test 2 passed");
-//		}else
-//		{
-//			System.out.println("Test 2 failed");
-//		}
+		matrix[0][1] = 10;
+		
+		if(lsm.test(matrix)==false)
+		{
+			System.out.println("Test 2 passed");
+		}else
+		{
+			System.out.println("Test 2 failed");
+		}
 	}
 
 }
