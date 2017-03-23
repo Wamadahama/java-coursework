@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 elements to &apos;Lab8-1/src&apos;&#x0A;- Original project: &apos;Labs&apos;&#x0A;- Destination element: &apos;Lab8-1/src&apos;&#x0A;- Original elements:&#x0A;     Pet.java&#x0A;     PetOrganizer.java" description="Copy files" destination="=Lab8-1/src" element1="Lab05/src/Lab05/Pet.java" element2="Lab05/src/Lab05/PetOrganizer.java" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1478790578918" units="0" version="1.0"/>
-</session>

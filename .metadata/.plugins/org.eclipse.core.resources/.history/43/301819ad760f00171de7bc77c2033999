@@ -1,0 +1,18 @@
+
+public class Calculator implements Process {
+
+
+    protected GUI gui;
+    // Postcondition: This Age has been initialized.
+    public Calculator() {           // default constructor
+         gui = new GUI (this);
+         gui.print(">");
+    }
+	public void processInput(String s) {
+		
+	}
+	
+	public static void main() {
+		Calculator calc  = new Calculator();
+	}
+}

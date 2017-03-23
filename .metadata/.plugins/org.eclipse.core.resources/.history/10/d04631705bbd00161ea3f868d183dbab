@@ -1,8 +1,0 @@
-/**
- * Elijah Ellis
- * Thursday December 8 2016
- * About page 
- * */
-public class AboutPageFrame extends JFrame {
-
-}

@@ -1,0 +1,51 @@
+
+public class Calculator implements Process {
+
+	SmallInt firstNumber = new SmallInt();
+	SmallInt secondNumber = new SmallInt();
+
+	private int offset = 0; 
+
+    protected GUI gui;
+
+    // Postcondition: This Age has been initialized.
+    public Calculator() {           // default constructor
+         gui = new GUI (this);
+         gui.print("Please enter two numbers");
+    }
+    
+	public void processInput(String s) {
+		if (offset == 0) {
+			
+			// Get first number 
+			firstNumber.setValue(s);
+
+			++offset;
+		} else {
+			// Get second number
+			secondNumber.setValue(s);
+			
+			// Addition 
+			gui.print("Addition\n");
+			gui.print(firstNumber.add(secondNumber) + "\n");
+			
+			
+			// Subtraction 
+			gui.print("Subtraction");
+			gui.print(firstNumber.subtract(secondNumber));
+			
+			// Multiplication
+			gui.print("Multiplication");
+			gui.print(firstNumber.multiply(secondNumber));
+			
+			// Division
+			gui.print("Divison");
+			gui.print(firstNumber.divide(secondNumber));
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		Calculator calc  = new Calculator();
+	}
+}

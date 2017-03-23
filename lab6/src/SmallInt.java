@@ -68,7 +68,7 @@ public class SmallInt {
 
 	// DRY
 	private boolean withinBounds(int n) {
-		if (n >= Integer.MAX_VALUE && n <= Integer.MIN_VALUE) 
+		if (n <= Integer.MAX_VALUE && n >= Integer.MIN_VALUE) 
 			return true;
 		return false;
 	}

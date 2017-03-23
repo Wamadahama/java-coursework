@@ -1,0 +1,40 @@
+
+public class Calculator implements Process {
+
+	SmallInt firstNumber = new SmallInt();
+	SmallInt secondNumber = new SmallInt();
+
+	private int offset = 0; 
+
+    protected GUI gui;
+
+    // Postcondition: This Age has been initialized.
+    public Calculator() {           // default constructor
+         gui = new GUI (this);
+         gui.print("Please enter two numbers");
+    }
+    
+	public void processInput(String s) {
+		if (offset == 0) {
+			
+			// Get first number 
+			firstNumber.setValue(s);
+			++offset;
+		} else {
+			secondNumber.setValue(s);
+			
+			// Addition 
+			gui.print("Addition");
+			gui.print(firstNumber.add(secondNumber));
+			
+			
+			// Subtraction 
+			gui.print("Subtraction");
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		Calculator calc  = new Calculator();
+	}
+}

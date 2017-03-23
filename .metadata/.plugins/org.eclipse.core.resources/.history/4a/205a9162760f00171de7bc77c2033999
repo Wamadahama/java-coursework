@@ -1,0 +1,7 @@
+
+public class Calculator implements Process {
+
+	public void processInput(String s) {
+		
+	}
+}

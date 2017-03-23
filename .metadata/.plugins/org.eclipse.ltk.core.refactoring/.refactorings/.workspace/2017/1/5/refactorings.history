@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 22 resources" deleteContents="false" description="Delete 22 resources" element1="/CS180-Homework-WordGame" element10="/Lab06" element11="/Lab07part1" element12="/Lab07part2" element13="/Lab07part3" element14="/Lab09" element15="/Lab1" element16="/Lab10" element17="/Lab2a" element18="/Lab2b" element19="/Lab8-1" element2="/CS180-Homework001-HotDog" element20="/Lab8-2" element21="/Labs" element22="/Lecture" element3="/CS180-Homework001-Personalnformation" element4="/Homework3" element5="/Homework3-part2" element6="/Homework3-WorldSeries" element7="/Lab03" element8="/Lab04" element9="/Lab05" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="22" stamp="1485792947588"/>
-</session>

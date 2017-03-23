@@ -1,0 +1,16 @@
+
+public class Calculator implements Process {
+
+
+    protected GUI gui;
+    public Calculator() {           // default constructor
+         gui = new GUI (this);
+         gui.print(">");
+    }
+	public void processInput(String s) {
+	}
+	
+	public static void main() {
+		Calculator calc  = new Calculator();
+	}
+}

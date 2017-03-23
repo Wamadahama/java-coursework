@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move &apos;WorldSeriesWinners.txt&apos; to &apos;Homework3-WorldSeries&apos;" description="Move &apos;WorldSeriesWinners.txt&apos; to &apos;Homework3-WorldSeries&apos;" destination="/Homework3-WorldSeries" element1="src/WorldSeriesWinners.txt" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1480957660988" updateReferences="true"/>
-</session>
