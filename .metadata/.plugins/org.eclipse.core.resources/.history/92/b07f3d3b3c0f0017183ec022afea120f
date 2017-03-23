@@ -1,0 +1,14 @@
+
+public class SmallInt {
+	private int value; 
+
+	public int setValue(String s) {
+		// Parse passed string 
+		int temp = Integer.parseInt(s);
+		
+		// Check bounds 
+		if (temp >= Integer.MAX_VALUE && temp <= Integer.MIN_VALUE) {
+			
+		}
+	}
+}

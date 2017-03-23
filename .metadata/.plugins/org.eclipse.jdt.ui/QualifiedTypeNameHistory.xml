@@ -4,4 +4,5 @@
 <fullyQualifiedTypeName name="IntegerConverter"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="MainClass"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Semaphore"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,37 @@
+/**
+ * Lab # 3 (CIS 181)
+ * Submitted By: Elijah Ellis 
+ * SID: 001646005
+ * Date: Wednesday February 15th 2017 
+*/
+package lab3;
+
+public class AckerFunction {
+
+    private int spaces = 0;
+    private int numberOfInvocations = 0;
+
+    // getter for data field "number of invocations"
+    public int countOfInvocations() {
+		return numberOfInvocations;
+    }
+
+    public int acker(int m, int n) {
+		int result = 0;
+
+		// TODO: implement the Ackermann's function to trace the method invocation
+		// history and count the total of the number of invocations
+		
+
+		return result; 
+    }
+
+    // Indent the trace messages according to how "deep" the current
+    // recursive call is. 
+    private void printSpaces() {
+		for(int i = 0; i < spaces; i++) {
+			System.out.print("    ");
+		}
+    }
+
+}    

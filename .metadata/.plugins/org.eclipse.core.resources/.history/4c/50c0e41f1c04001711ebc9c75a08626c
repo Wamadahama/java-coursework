@@ -1,0 +1,19 @@
+package lab5;
+
+public class MyThread extends Thread {
+
+    /**
+     * Default Constructor 
+     */
+    public MyThread() {
+	
+    }
+
+    /**
+     * Run override  
+     */
+    public void start() {
+	System.out.println("Hello");
+    }
+    
+}

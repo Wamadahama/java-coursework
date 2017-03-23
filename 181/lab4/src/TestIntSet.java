@@ -32,6 +32,13 @@ public class TestIntSet {
 		System.out.println("Test union S1 U S2 ");
 		System.out.println(s1.union(s2).toString());
 		
+		// Test Removal 
+		IntSet s3 = new IntSet(new int[] {2, 3});
+
+		System.out.println("Test removal of 2 from S3 {2 ,3}");
+		s3.remove(2);
+		System.out.println(s3.toString());
+
 		
 		// Test intersection
 		System.out.println("Test intersection S1 ^ S2 ");
