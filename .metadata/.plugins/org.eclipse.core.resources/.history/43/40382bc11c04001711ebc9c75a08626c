@@ -1,6 +1,0 @@
-package lab5;
-
-public class Main {
-    MyThread test = new MyThread();
-    test.start()
-}

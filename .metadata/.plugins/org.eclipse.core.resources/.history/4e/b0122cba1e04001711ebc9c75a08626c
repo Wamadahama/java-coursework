@@ -1,8 +1,0 @@
-package lab5;
-
-public class ThreadMain {
-	public static void main(String args[]) {
-		MyThread s1 = new MyThread();
-		s1.start();
-	}
-}

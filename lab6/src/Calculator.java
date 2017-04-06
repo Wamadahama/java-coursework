@@ -42,6 +42,9 @@ public class Calculator implements Process {
 			gui.print("Divison \n");
 			gui.print(firstNumber.divide(secondNumber) + "\n");
 			
+			// Disable input 
+			gui.disableInputBar();
+			
 		}
 	}
 	

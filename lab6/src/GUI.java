@@ -17,6 +17,7 @@ public class GUI extends JFrame {
         inputField = new JTextField(47);
         panel.add(inputField);
         inputField.setEditable(true);
+        
 
         JLabel outputLabel = new JLabel("Output: ");
         panel.add(outputLabel);
@@ -86,5 +87,10 @@ public class GUI extends JFrame {
     public void freeze() {
         inputField.setEditable(false);
     }
+    
+    public void disableInputBar() {
+    	inputField.disable();    
+    }
 }
+
 
