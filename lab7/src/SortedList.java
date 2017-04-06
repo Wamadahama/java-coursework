@@ -51,36 +51,6 @@ public class SortedList implements SortedListInterface {
         if (size() == MAX_LIST)
             throw new ListException("add (array is full)");
 
-        /*
-        int placementIndex = 0;
-        int index = 0;
-
-        for(;index < numItems; ++index) {
-        	if(items[index] != null && newItem.compareTo(items[index]) > 0) {
-        		placementIndex = index+1;  
-        	} else  if(items[index] != null && newItem.compareTo(items[index]) == 0){
-        		placementIndex = index;
-        	} else {
-        		placementIndex = index - 1; 
-        	}
-        }
-        
-        // Place it in the array 
-        Object[] newArray = new Object[MAX_LIST]; 
-        
-        for(int i = 0; i <= numItems; ++i) {
-           if(i == placementIndex) { 
-        	   newArray[i] = newItem; 
-        	   ++i; // move i ahead once 
-           } else {
-        	   newArray[i] = items[i]; 
-           }
-        }
-        
-        items = newArray;
-        ++numItems;
-        */ 
-
         // Optimization
         if(numItems == 0) {
         	items[0] = newItem; 
@@ -94,43 +64,52 @@ public class SortedList implements SortedListInterface {
 				selectionIndex++; 
 			}
 			
-			// Append into array 
+			// Split array
 			Object[] a1 = this.getSub(0, selectionIndex, items);
-			Object[] a2 = this.getSub(selectionIndex+1, numItems-1, items);
+			Object[] a2 = this.getSub(selectionIndex, numItems, items);
 			
-			a1[numItems-1] = newItem;
+			// Add item to array
+			a1[a1.length - 1] = newItem;
+			++numItems;
 			
-			
+			// Reconstruct the array
 			for(int i = 0; i < a1.length; i++) {
 				items[i] = a1[i];
 			}
 
-			for(int i = a1.length; i < a2.length; i++) {
-				items[i] = a2[i];
+			for(int i = a1.length, j = 0; i < a2.length; i++ , j++) {
+				items[i] = a2[j];
 			}
         }
     }
 
     // new operation: sortedRemove
     public void sortedRemove(Comparable anItem) throws ListException {
-        int index = 1;
+        int index = locateIndex(anItem) - 1;
+        
+        if(index >= numItems)
+        	throw new ListException("sortedRemove (item not found): " + anItem);
+        
+        for(int i = index; i < numItems; i++) {
+        	items[i] = items[i+1];
+        }
 
-        // ToDo
-
+        --numItems;
     }
 
     // new operation: locateIndex
     public int locateIndex(Comparable anItem) {
-        int index = 1;
+    	int selectionIndex = 1;
 
-        // ToDo
-
-        return index;
+		while(selectionIndex <= numItems && anItem.compareTo(items[selectionIndex - 1]) != 0) {
+			selectionIndex++; 
+		}
+		return selectionIndex;
     }
     
     private Object[] getSub(int start, int end, Object[] arr) { 
-    	Object[] ret = new Object[end];
-    	for(int i = 0;start <= end; ++start, ++i) {
+    	Object[] ret = new Object[end+1];
+    	for(int i = 0;start < end; ++start, ++i) {
     		ret[i] = arr[start];
     	}
     	return ret;
