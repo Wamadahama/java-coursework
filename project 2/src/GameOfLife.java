@@ -39,9 +39,11 @@ public class GameOfLife implements GameInterface {
     // Postcondtion: 'map' is a deep copy of 'sourceMap'.
     //
     private void copyMap(boolean sourceMap[][]) {
-
-        // ==> 1. Add your code here!
-
+    	for(int i = 0; i < sourceMap.length; ++i){
+    		for(int j = 0; j < sourceMap[i].length; ++j){
+    			map[i][j] = sourceMap[i][j];
+    		}
+    	}	
     }
 
     // clearMap:
@@ -49,9 +51,11 @@ public class GameOfLife implements GameInterface {
     // Postcondtion: Sets all cells of the 'targetMap' to DEAD.
     //
     private void clearMap(boolean targetMap[][]) {
-
-        // ==> 2. Add your code here!
-
+    	for(int i = 0; i < targetMap.length; ++i){
+    		for(int j = 0; j < targetMap[i].length; ++j){
+    			targetMap[i][j] = false;
+    		}
+    	}	
     }
 
     //  getFlatNeighborCount:
@@ -66,10 +70,34 @@ public class GameOfLife implements GameInterface {
     //
     private int getFlatNeighborCount(int row, int col){
         int count = 0;
-
-        // ==> 3. Add your code here!
-
-
+        
+        // Mapping of the neighbors 
+        int[][] areas = { 
+        		// Top row
+        		{ -1, -1 }, // r-1 c-1 
+        		{ -1, 0  }, // r-1 c
+        		{ -1,  1 }, // r-1 c+1
+        		// Sides
+        		{ 0, -1  }, // r c-1 
+        		{ 0, 1   }, // r c + 1
+        		// Bottom Row 
+        		{ 1, -1  }, // r+1 c-1
+        		{ 1,  0  }, // r+1 c
+        		{ 1,  1  }  // r+1 c+1 
+        };
+        
+        
+        // Iterate over the neighbors
+        for(int i = 0; i < areas.length; ++i) { 
+        		
+        	int[] areaOffsets = areas[i];
+			// Are there neighbors?} catch (Exception e) {}
+        	try { 
+			if(map[row + areaOffsets[0]][col + areaOffsets[1]] == true) {
+				++count; // Increment neighbors 
+			}  } catch (Exception e) {}
+        }
+        
         return count;
     }
 
@@ -86,9 +114,33 @@ public class GameOfLife implements GameInterface {
     //		     d) the global variable 'generation' is increased by 1
     //	
     public  void nextGenerationForFlatGrid() {
-
-        // ==> 4. Add your code here!
-
+    	
+    	for(int i = 0; i < map.length; ++i) {
+    		for(int j = 0; j < map[i].length; ++j) {
+    			
+    			// A)
+    			boolean point = map[i][j];
+    			
+    			System.out.println("point: " + point + " { " + i + " " + j + " }");
+    			int neighborCount = getFlatNeighborCount(i, j);
+    			
+    			// A dead cell with 3 neighbors is reborn
+    			if(point == DEAD && neighborCount >= BIRTH_NBR_COUNTS) {
+    				newMap[i][j] = ALIVE;  
+    			} else if (point == ALIVE && (neighborCount == SURV_NBR_COUNTS_2 || neighborCount == SURV_NBR_COUNTS_3)) { // a cell with two or three living neighbors remains alive next generation   				
+    				newMap[i][j] = ALIVE;
+    			} else if (point == ALIVE && neighborCount >= 4) { // A live cell with 4 or more neighbors dies due to over population 
+    				newMap[i][j] = DEAD;
+    			} else if(point == ALIVE && neighborCount <= 1) { // A live cell with one or fewer living neighbors dies from loneliness
+    				newMap[i][j] = DEAD; 
+    			}
+    			
+    		}
+    	}
+    	
+    	copyMap(newMap); 
+    	// D)
+    	++generation;
     }
 
 

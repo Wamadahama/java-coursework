@@ -271,3 +271,1161 @@ java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
 	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
 	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-04-09 13:41:55.320 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-09 13:42:31.190
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Elijah'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:19.929
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.853
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.864
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.872
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.879
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.888
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.895
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.903
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.913
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:20.920
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.695
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.711
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.742
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.752
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.833
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.848
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.859
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.873
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.904
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.950
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.968
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:22.993
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:23.015
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:23.026
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:23.071
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-04-09 13:45:23.090
+!MESSAGE Auto sharing project with git failed
+!STACK 0
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: .git:
+	at sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at sun.nio.fs.AbstractPath.resolve(Unknown Source)
+	at org.eclipse.egit.core.RepositoryUtil.toDirSet(RepositoryUtil.java:451)
+	at org.eclipse.egit.core.RepositoryUtil.getRepositories(RepositoryUtil.java:414)
+	at org.eclipse.egit.core.RepositoryUtil.getConfiguredRepositories(RepositoryUtil.java:461)
+	at org.eclipse.egit.core.RepositoryUtil.addConfiguredRepository(RepositoryUtil.java:485)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.visitConnect(Activator.java:580)
+	at org.eclipse.egit.core.Activator$CheckProjectsToShare.run(Activator.java:501)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 9 2017-04-09 14:46:15.230
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:212)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.core 4 4 2017-04-09 14:54:13.947
+!MESSAGE Exception occurred during problem detection:
+----------------------------------- SOURCE BEGIN -------------------------------------
+/***********************************************************
+ * Project #2 (CIS 181, Fall 2008)                         *
+ * Submitted By: Your name here !!!                        *
+ * SID: Your new SID starting with "00"                    *
+ * Date: Your submission date                              *
+ ***********************************************************/
+
+/**
+ * CIS 181 Array Based Implementation of Conway's Game Of Life
+ * The game of life class: GameOfLife.java
+ *
+ * @author Haiping Xu
+ * Created on October 25, 2008
+ **/
+
+public class GameOfLife implements GameInterface {
+    private boolean[][] originalMap,    // The initial cell configuration
+                                map,    // The current cell configuration
+                             newMap;    // The next generation configuration
+    private GameGUI gui;
+    private int generation = 0;
+    private FileIO fileIO;
+
+    // GameOfLife constructor
+    public GameOfLife() {
+        originalMap = new boolean[MAX_ROWS][MAX_COLS];
+        map = new boolean[MAX_ROWS][MAX_COLS];
+        newMap = new boolean[MAX_ROWS][MAX_COLS];
+        gui = new GameGUI(this, map);
+        gui.setTitle("CIS 181 Array Based Game Of Life");
+        fileIO = new FileIO("life", "Game of Life Text Files");
+        readExample(2);
+    }
+
+    //  ====>>>>> Complete the methods below this line! <<<<<====
+
+    // copyMap:
+    // Precondtions: None.
+    // Postcondtion: 'map' is a deep copy of 'sourceMap'.
+    //
+    private void copyMap(boolean sourceMap[][]) {
+
+        // ==> 1. Add your code here!
+
+    }
+
+    // clearMap:
+    // Precondtions: None.
+    // Postcondtion: Sets all cells of the 'targetMap' to DEAD.
+    //
+    private void clearMap(boolean targetMap[][]) {
+    	for(int i = 0; i < targetMap.length; ++i){
+    		for(int j = 0; j < targetMap[i].length; ++j){
+    			targetMap[i][j] = false;
+    		}
+    	}	
+    	
+    	System.out.println(java.util.Arrays.toString(targetMap:w));
+    }
+
+    //  getFlatNeighborCount:
+    //  Precondtions:  0 <= row < MAX_ROWS and 0 <= col < MAX_COLS.
+    //  Postcondtion:  A count of all LIVE neighbors of the cell at [row, col] is
+    //                 returned where its neighbors are all the ADJACENT cells
+    //                 including those
+    //                 a) In the rows BELOW and ABOVE the cell (if any exist).
+    //                 b) In the columns LEFT and RIGHT of the cell (if any exist).
+    //                 Thus, a cell adjacent to a board edge (or corner) has
+    //                 fewer neighbors than other cells.
+    //
+    private int getFlatNeighborCount(int row, int col){
+        int count = 0;
+
+        // ==> 3. Add your code here!
+
+
+        return count;
+    }
+
+
+    // nextGenerationForFlatGrid:
+    // Precondtions: None
+    // Postcondtion: The next generation of live and dead cells is calculated using
+    //               a) the FLAT neighbor counts.
+    //               b) the current birth, survival and death count rules.
+    //               c) the rules are applied to the counts obtained from the current
+    //                  generation's configuration of live and dead cells.
+    //               The current 'map' is updated to the next generation's configuration
+    //               of live and dead cells.
+    //		     d) the global variable 'generation' is increased by 1
+    //	
+    public  void nextGenerationForFlatGrid() {
+
+        // ==> 4. Add your code here!
+
+    }
+
+
+    // ==> 5. Implement the game of life for torus grid.
+
+    public  void nextGenerationForTorusGrid() {}
+
+
+
+
+    //  ====>>>>> Don't touch the code below this line! <<<<<====
+
+    // Return the next generation
+    public int getGeneration() {
+        return generation;
+    }
+
+    // Reset the map to the original map
+    public void reset() {
+        copyMap(originalMap);
+        generation = 0;
+        gui.repaint();
+    }
+
+    // Game of life examples 1-4: Fish, Plus, Glider, FlyingMachine
+    public void readExample(int n) {
+        System.out.println("Initializing with example " + n + " ...");
+        clearMap(originalMap);
+
+        switch (n) {
+           case 1: // Example 1: Fish
+             for (int col = 23; col <= 26; col++)
+                 originalMap[13][col] = ALIVE;
+             originalMap[14][22] = ALIVE;
+             originalMap[14][26] = ALIVE;
+             originalMap[15][26] = ALIVE;
+             originalMap[16][22] = ALIVE;
+             originalMap[16][25] = ALIVE;
+             break;
+           case 2: // Example 2: Plus
+               for (int col = 6; col < 43; col++)
+                 originalMap[24][col] = ALIVE;
+             for (int row = 6; row < 43; row++)
+                 originalMap[row][24] = ALIVE;
+             break;
+           case 3: // Example 3: Glider
+                originalMap[14][23] = ALIVE;
+             originalMap[15][24] = ALIVE;
+             for (int row = 13; row <= 15; row++)
+                 originalMap[row][25] = ALIVE;
+             break;
+           case 4: // Example 4: FlyingMachine
+                for (int col = 22; col <= 25; col++) {
+                 originalMap[11][col] = ALIVE;
+                 originalMap[19][col] = ALIVE;
+             }
+             for (int row = 14; row <= 16; row++)
+                 for (int col = 17; col <= 18; col++)
+                     originalMap[row][col] = ALIVE;
+             originalMap[15][19] = ALIVE;
+             for (int row = 12; row <= 18; row = row+2)
+                 originalMap[row][21] = ALIVE;
+             originalMap[14][24] = ALIVE;
+             originalMap[16][24] = ALIVE;
+             originalMap[12][25] = ALIVE;
+             originalMap[13][25] = ALIVE;
+             originalMap[17][25] = ALIVE;
+             originalMap[18][25] = ALIVE;
+             break;
+           default: // Default Example: ClearSpace
+             break;
+        }
+
+        copyMap(originalMap);
+        generation = 0;
+        gui.repaint();
+    }
+
+    //  Read map from file
+    public void readInMap() {
+        clearMap(originalMap);
+        if (fileIO.read(originalMap)) {
+            copyMap(originalMap);
+            generation = 0;
+        } else
+            readExample(2);
+        gui.repaint();
+    }
+
+    // Write map to file
+    public void writeMap() {
+       fileIO.write(map);
+    }
+
+    // Change the state of a cell
+    public void updateMap(int row, int col) {
+        map[row][col] = !map[row][col];
+
+    }
+
+    // Destroy the GUI window
+    public void destroy() {
+        gui.dispose();
+    }
+
+    // The main method of GameOfLife
+    public static void  main(String[] args) {
+        GameOfLife game = new GameOfLife();
+    }
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2017-04-09 14:54:14.008
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 1
+Java Model Exception: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:249)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	... 19 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2017-04-09 14:54:14.009
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2017-04-09 14:54:14.009
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2017-04-09 14:54:14.019
+!MESSAGE Error in JDT Core during reconcile
+!STACK 1
+Java Model Exception: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:249)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	... 19 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2017-04-09 14:54:14.019
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2017-04-09 14:54:14.039
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:1218)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:692)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1190)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:551)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:543)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:486)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:476)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:173)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2017-04-09 14:54:14.049
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:819)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4790)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4757)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:915)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:729)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:684)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1026)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:1218)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:692)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1190)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:551)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:543)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:486)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:476)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:173)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
