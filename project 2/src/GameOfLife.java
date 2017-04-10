@@ -42,6 +42,7 @@ public class GameOfLife implements GameInterface {
     	for(int i = 0; i < sourceMap.length; ++i){
     		for(int j = 0; j < sourceMap[i].length; ++j){
     			map[i][j] = sourceMap[i][j];
+    			newMap[i][j] = sourceMap[i][j];
     		}
     	}	
     }
@@ -54,6 +55,7 @@ public class GameOfLife implements GameInterface {
     	for(int i = 0; i < targetMap.length; ++i){
     		for(int j = 0; j < targetMap[i].length; ++j){
     			targetMap[i][j] = false;
+
     		}
     	}	
     }

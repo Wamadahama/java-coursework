@@ -1,8 +1,7 @@
 /***********************************************************
  * Lab #8 (CIS 181)                                        *
- * Submitted By: Your name here !!!                        *
- * SID: Your new SID starting with "00"                    *
- * Date: Your submission date                              *
+ * Submitted By: Elijah Ellis
+ * Date:  Thursday April 6th 
  ***********************************************************/
 
 /**
@@ -118,6 +117,7 @@ public class CircularDoublyLinkedList implements ExtendedListInterface {
     	newNode.setNext(head);
     	
     	newNode.setPrev(head.getPrev());
+    	head.getPrev().setNext(newNode);
     	head.setPrev(newNode);
     	++numItems;
     }
