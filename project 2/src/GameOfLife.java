@@ -71,35 +71,75 @@ public class GameOfLife implements GameInterface {
     //                 fewer neighbors than other cells.
     //
     private int getFlatNeighborCount(int row, int col){
-        int count = 0;
+        /* 
         
         // Mapping of the neighbors 
         int[][] areas = { 
         		// Top row
-        		{ -1, -1 }, // r-1 c-1 
-        		{ -1, 0  }, // r-1 c
-        		{ -1,  1 }, // r-1 c+1
+        		{ -1, -1 },  //r-1 c-1 
+        		{ -1, 0  },  //r-1 c
+        		{ -1,  1 },  //r-1 c+1
         		// Sides
-        		{ 0, -1  }, // r c-1 
-        		{ 0, 1   }, // r c + 1
+        		{ 0, -1  },  //r c-1 
+        		{ 0, 1   },  //r c + 1
         		// Bottom Row 
-        		{ 1, -1  }, // r+1 c-1
-        		{ 1,  0  }, // r+1 c
-        		{ 1,  1  }  // r+1 c+1 
+        		{ 1, -1  },  //r+1 c-1
+        		{ 1,  0  },  //r+1 c
+        		{ 1,  1  }   //r+1 c+1 
         };
         
         
         // Iterate over the neighbors
-        for(int i = 0; i < areas.length; ++i) { 
+	    for(int i = 0; i < areas.length; ++i) { 
         		
         	int[] areaOffsets = areas[i];
-			// Are there neighbors?} catch (Exception e) {}
+			// Are there neighbors?
         	try { 
-			if(map[row + areaOffsets[0]][col + areaOffsets[1]] == true) {
-				++count; // Increment neighbors 
-			}  } catch (Exception e) {}
+				if(map[row + areaOffsets[0]][col + areaOffsets[1]] == true) {
+					++count; // Increment neighbors 
+				}  
+			} catch (ArrayIndexOutOfBoundsException e) {} // If the array is out of bounds then its on the edge of the grid, being out of bounds just means its dead 
+
         }
         
+        */
+        
+        
+       /* 
+        		// Top row
+        		{ -1, -1 },  //r-1 c-1 
+        		{ -1, 0  },  //r-1 c
+        		{ -1,  1 },  //r-1 c+1
+        		// Sides
+        		{ 0, -1  },  //r c-1 
+        		{ 0, 1   },  //r c + 1
+        		// Bottom Row 
+        		{ 1, -1  },  //r+1 c-1
+        		{ 1,  0  },  //r+1 c
+        		{ 1,  1  }   //r+1 c+1 
+   		*/ 
+
+        // Iterate through the rows 
+        
+	    
+    	int count = 0; 
+        if(0 <= row && row < MAX_ROWS && 0 <= col && col < MAX_COLS) {
+			for(int x = row-1; x <= row+1; ++x) {
+				for(int y = col-1; y <= col+1; ++y) {
+					// If its not the (row, col) then its a neighbor
+					if(x > 49 || y > 49)
+						continue;
+					
+					if(y < 0 || x < 0)
+						continue;
+					
+					if((x != row && y != col) && map[x][y])
+						++count;
+				}
+			}
+        } 
+
+         
         return count;
     }
 
@@ -117,17 +157,18 @@ public class GameOfLife implements GameInterface {
     //	
     public  void nextGenerationForFlatGrid() {
     	
-    	for(int i = 0; i < map.length; ++i) {
+		for(int i = 0; i < map.length; ++i) {
     		for(int j = 0; j < map[i].length; ++j) {
     			
     			// A)
     			boolean point = map[i][j];
     			
-    			System.out.println("point: " + point + " { " + i + " " + j + " }");
     			int neighborCount = getFlatNeighborCount(i, j);
     			
+    				System.out.println("{ " + i + " " + j + " } : " + neighborCount );
+    			
     			// A dead cell with 3 neighbors is reborn
-    			if(point == DEAD && neighborCount >= BIRTH_NBR_COUNTS) {
+    			if(point == DEAD && neighborCount == BIRTH_NBR_COUNTS) {
     				newMap[i][j] = ALIVE;  
     			} else if (point == ALIVE && (neighborCount == SURV_NBR_COUNTS_2 || neighborCount == SURV_NBR_COUNTS_3)) { // a cell with two or three living neighbors remains alive next generation   				
     				newMap[i][j] = ALIVE;
@@ -147,8 +188,94 @@ public class GameOfLife implements GameInterface {
 
 
     // ==> 5. Implement the game of life for torus grid.
+    
+    public int getTorusNeighborCount(int row, int col) {
+        int count = 0;
+        
+        // Mapping of the neighbors 
+        int[][] areas = { 
+        		// Top row
+        		{ -1, -1 }, // r-1 c-1 
+        		{ -1, 0  }, // r-1 c
+        		{ -1,  1 }, // r-1 c+1
+        		// Sides
+        		{ 0, -1  }, // r c-1 
+        		{ 0, 1   }, // r c + 1
+        		// Bottom Row 
+        		{ 1, -1  }, // r+1 c-1
+        		{ 1,  0  }, // r+1 c
+        		{ 1,  1  }  // r+1 c+1 
+        };
+        
+		
+        // Iterate over the neighbors
+	    for(int i = 0; i < areas.length; ++i) { 
+        		
+        	int[] areaOffsets = areas[i];
+			// Are there neighbors?
+        	int x = areaOffsets[0];
+        	int y = areaOffsets[1];
+        	try { 
+				if(map[row+x][col+y] && (row != x || col != x)) {
+					++count; // Increment neighbors 
+				}  
+			} catch (ArrayIndexOutOfBoundsException e) {
 
-    public  void nextGenerationForTorusGrid() {}
+				int newRow = 0;
+				int newCol = 0;
+				// Wrapping effect
+				if(row >= 49) {
+					newRow = 0;
+				} else if(row == 0) {	
+					newRow = 49;
+				}
+				
+				if(col >= 49) {
+					newCol = 0;
+				} else if(col == 0) {
+					newCol = 49;
+				}
+				
+				if(map[row][col] && (newRow != row || newCol != col)){ 
+					++count;
+				}
+			} // If the array is out of bounds then its on the edge of the grid, being out of bounds just means its dead 
+
+        }
+        
+        return count;
+    }
+
+    public  void nextGenerationForTorusGrid() {
+
+    	System.out.println(getTorusNeighborCount(0,10));
+
+    	for(int i = 0; i < map.length; ++i) {
+    		for(int j = 0; j < map[i].length; ++j) {
+    			
+    			// A)
+    			boolean point = map[i][j];
+    			
+    			int neighborCount = getFlatNeighborCount(i, j);
+    			
+    			// A dead cell with 3 neighbors is reborn
+    			if(point == DEAD && neighborCount == BIRTH_NBR_COUNTS) {
+    				newMap[i][j] = ALIVE;  
+    			} else if (point == ALIVE && (neighborCount == SURV_NBR_COUNTS_2 || neighborCount == SURV_NBR_COUNTS_3)) { // a cell with two or three living neighbors remains alive next generation   				
+    				newMap[i][j] = ALIVE;
+    			} else if (point == ALIVE && neighborCount >= 4) { // A live cell with 4 or more neighbors dies due to over population 
+    				newMap[i][j] = DEAD;
+    			} else if(point == ALIVE && neighborCount <= 1) { // A live cell with one or fewer living neighbors dies from loneliness
+    				newMap[i][j] = DEAD; 
+    			}
+    			
+    		}
+    	}
+    	
+    	copyMap(newMap); 
+    	// D)
+    	++generation;
+    }
 
 
 
