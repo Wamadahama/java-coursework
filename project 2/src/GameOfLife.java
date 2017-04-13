@@ -42,7 +42,6 @@ public class GameOfLife implements GameInterface {
     	for(int i = 0; i < sourceMap.length; ++i){
     		for(int j = 0; j < sourceMap[i].length; ++j){
     			map[i][j] = sourceMap[i][j];
-    			newMap[i][j] = sourceMap[i][j];
     		}
     	}	
     }
@@ -71,75 +70,49 @@ public class GameOfLife implements GameInterface {
     //                 fewer neighbors than other cells.
     //
     private int getFlatNeighborCount(int row, int col){
-        /* 
-        
-        // Mapping of the neighbors 
-        int[][] areas = { 
-        		// Top row
-        		{ -1, -1 },  //r-1 c-1 
-        		{ -1, 0  },  //r-1 c
-        		{ -1,  1 },  //r-1 c+1
-        		// Sides
-        		{ 0, -1  },  //r c-1 
-        		{ 0, 1   },  //r c + 1
-        		// Bottom Row 
-        		{ 1, -1  },  //r+1 c-1
-        		{ 1,  0  },  //r+1 c
-        		{ 1,  1  }   //r+1 c+1 
-        };
-        
-        
-        // Iterate over the neighbors
-	    for(int i = 0; i < areas.length; ++i) { 
-        		
-        	int[] areaOffsets = areas[i];
-			// Are there neighbors?
-        	try { 
-				if(map[row + areaOffsets[0]][col + areaOffsets[1]] == true) {
-					++count; // Increment neighbors 
-				}  
-			} catch (ArrayIndexOutOfBoundsException e) {} // If the array is out of bounds then its on the edge of the grid, being out of bounds just means its dead 
 
-        }
-        
-        */
-        
-        
-       /* 
-        		// Top row
-        		{ -1, -1 },  //r-1 c-1 
-        		{ -1, 0  },  //r-1 c
-        		{ -1,  1 },  //r-1 c+1
-        		// Sides
-        		{ 0, -1  },  //r c-1 
-        		{ 0, 1   },  //r c + 1
-        		// Bottom Row 
-        		{ 1, -1  },  //r+1 c-1
-        		{ 1,  0  },  //r+1 c
-        		{ 1,  1  }   //r+1 c+1 
-   		*/ 
+		/* 
+			Top row
+		{ -1, -1 },  r-1 c-1 
+		{ -1, 0  },  r-1 c
+		{ -1,  1 },  r-1 c+1
 
-        // Iterate through the rows 
-        
+			Sides
+		{ 0, -1  },  r c-1 
+		{ 0, 1   },  r c + 1
+
+			Bottom Row 
+		{ 1, -1  },  r+1 c-1
+		{ 1,  0  },  r+1 c
+		{ 1,  1  }   r+1 c+1
+
+		*/
 	    
     	int count = 0; 
-        if(0 <= row && row < MAX_ROWS && 0 <= col && col < MAX_COLS) {
-			for(int x = row-1; x <= row+1; ++x) {
+    	
+        // Iterate through the rows 
+		for(int x = row-1; x <= row+1; ++x) {
+
+			// Check if in bounds 
+			if(x >= 0 && x < MAX_ROWS) {
+				// Iterate through columns
 				for(int y = col-1; y <= col+1; ++y) {
-					// If its not the (row, col) then its a neighbor
-					if(x > 49 || y > 49)
-						continue;
-					
-					if(y < 0 || x < 0)
-						continue;
-					
-					if((x != row && y != col) && map[x][y])
-						++count;
+
+					// check if inbounds
+					if(y >= 0 && y < MAX_COLS) {
+						// If its not the (row, col) then its a neighbor
+						if(map[x][y])
+							++count;
+					}
+
 				}
 			}
-        } 
+		}
+		
+		// Dont count RC 
+		if(map[row][col])
+			--count;
 
-         
         return count;
     }
 
@@ -165,7 +138,6 @@ public class GameOfLife implements GameInterface {
     			
     			int neighborCount = getFlatNeighborCount(i, j);
     			
-    				System.out.println("{ " + i + " " + j + " } : " + neighborCount );
     			
     			// A dead cell with 3 neighbors is reborn
     			if(point == DEAD && neighborCount == BIRTH_NBR_COUNTS) {
@@ -182,82 +154,100 @@ public class GameOfLife implements GameInterface {
     	}
     	
     	copyMap(newMap); 
+    	clearMap(newMap);
     	// D)
     	++generation;
     }
 
 
-    // ==> 5. Implement the game of life for torus grid.
+   // ==> 5. Implement the game of life for torus grid.
     
+    // getTorusNeighborCount:
+    // Precondtions:   
+    //  Postcondtion:  A count of all LIVE neighbors of the cell at [row, col] is
+    //                 returned where its neighbors are all the ADJACENT cells
+    //                 including those
+    //                 a) In the rows BELOW and ABOVE the cell (if any exist).
+    //                 b) In the columns LEFT and RIGHT of the cell (if any exist).
+    //                 c) If it steps out of bounds then it will wrap around to the other side of the grid
+	//					i.e [5,49] has a neighbor at [5,0], this applies to the top and bottom as well, [0,15] has a neighbor at [49, 15]
+    //                 Thus, a cell adjacent to a board edge (or corner) has
+    //                 as many neighbors as other cells.
     public int getTorusNeighborCount(int row, int col) {
         int count = 0;
         
-        // Mapping of the neighbors 
-        int[][] areas = { 
-        		// Top row
-        		{ -1, -1 }, // r-1 c-1 
-        		{ -1, 0  }, // r-1 c
-        		{ -1,  1 }, // r-1 c+1
-        		// Sides
-        		{ 0, -1  }, // r c-1 
-        		{ 0, 1   }, // r c + 1
-        		// Bottom Row 
-        		{ 1, -1  }, // r+1 c-1
-        		{ 1,  0  }, // r+1 c
-        		{ 1,  1  }  // r+1 c+1 
-        };
-        
-		
-        // Iterate over the neighbors
-	    for(int i = 0; i < areas.length; ++i) { 
-        		
-        	int[] areaOffsets = areas[i];
-			// Are there neighbors?
-        	int x = areaOffsets[0];
-        	int y = areaOffsets[1];
-        	try { 
-				if(map[row+x][col+y] && (row != x || col != x)) {
-					++count; // Increment neighbors 
-				}  
-			} catch (ArrayIndexOutOfBoundsException e) {
+        // Wrapping for x and y 
+        int dx = 0;
+        int dy = 0; 
 
-				int newRow = 0;
-				int newCol = 0;
+        // each row 
+		for(int x = row-1; x <= row+1; ++x) {
+
+			// Wrapping effect
+			dx = x;
+
+			if(x < 0) {	
+				dx = 49;
+			}
+			
+			if(x >= 50) {
+				dx = 0;
+			}
+			
+
+			// Each col
+			for(int y = col-1; y <= col+1; ++y) {
+
 				// Wrapping effect
-				if(row >= 49) {
-					newRow = 0;
-				} else if(row == 0) {	
-					newRow = 49;
-				}
+				dy = y;
 				
-				if(col >= 49) {
-					newCol = 0;
-				} else if(col == 0) {
-					newCol = 49;
+				if(y < 0) {
+					dy = 49;
 				}
-				
-				if(map[row][col] && (newRow != row || newCol != col)){ 
-					++count;
-				}
-			} // If the array is out of bounds then its on the edge of the grid, being out of bounds just means its dead 
 
-        }
-        
+				if(y >= 50) {
+					dy = 0;
+				} 
+				
+
+				// If its not the (row, col) then its a neighbor
+				if(map[dx][dy])
+					++count;
+			}
+
+		}
+		
+		// Don't count this 
+		if(map[row][col])
+			--count;
+		
+				
         return count;
     }
 
-    public  void nextGenerationForTorusGrid() {
-
-    	System.out.println(getTorusNeighborCount(0,10));
-
-    	for(int i = 0; i < map.length; ++i) {
+    // nextGenerationForFlatGrid:
+    // Precondtions: None
+    // Postcondtion: The next generation of live and dead cells is calculated using
+    //               a) the TORUS neighbor counts.
+    //               b) the current birth, survival and death count rules.
+    //               c) the rules are applied to the counts obtained from the current
+    //                  generation's configuration of live and dead cells.
+    //               The current 'map' is updated to the next generation's configuration
+    //               of live and dead cells.
+    //		     d) the global variable 'generation' is increased by 1
+    //	
+    public void nextGenerationForTorusGrid() {
+		for(int i = 0; i < map.length; ++i) {
     		for(int j = 0; j < map[i].length; ++j) {
     			
     			// A)
     			boolean point = map[i][j];
     			
-    			int neighborCount = getFlatNeighborCount(i, j);
+    			// B)
+    			int neighborCount = getTorusNeighborCount(i, j);
     			
+    			
+    			// C)
     			// A dead cell with 3 neighbors is reborn
     			if(point == DEAD && neighborCount == BIRTH_NBR_COUNTS) {
     				newMap[i][j] = ALIVE;  
@@ -273,6 +263,7 @@ public class GameOfLife implements GameInterface {
     	}
     	
     	copyMap(newMap); 
+    	clearMap(newMap);
     	// D)
     	++generation;
     }
