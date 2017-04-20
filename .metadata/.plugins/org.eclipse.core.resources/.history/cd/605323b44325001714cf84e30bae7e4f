@@ -1,0 +1,59 @@
+/**
+ * @author 
+ * Elijah Ellis
+ */
+public class WordTransformer {
+
+	
+	static String makeCapital (String theWord){
+		char[] str = theWord.toCharArray();
+		str[0] = Character.toUpperCase(str[0]);
+		return new String(str);
+	}
+
+	static String lowerCase (String theWord){
+		/* return 'theWord' with the first letter in lowercase */
+		char[] str = theWord.toCharArray();
+		str[0] = Character.toLowerCase(str[0]);
+		return new String(str);
+	}
+
+	static String upperCaser (String theWord) {
+		/* return 'theWord' in all uppercase */
+		char[] str = theWord.toCharArray();
+		
+		for (int i = 0; i < str.length; i++) {
+			str[i] = Character.toUpperCase(str[i]);
+		}
+
+		return new String(str);
+	}
+
+	static String lowerCaser (String thePhrase) {
+		/* return 'theWord' in all lowerCase */
+		char[] str = thePhrase.toCharArray();
+		
+		for (int i = 0; i < str.length; i++) {
+			str[i] = Character.toLowerCase(str[i]);
+		}
+
+		return new String(str);
+	}
+
+	static String ezEncrypt (String theWord) {
+		/* this method will take the every even/odd pair of letters and swaps them.
+		 * In the case of an odd length word, the last letter will not move.
+		 * Example theWord = "Super"
+		 * returns "uSper"
+		 */
+		char[] temp = theWord.toCharArray();
+		
+		for(int i = 0; i < temp.length; ++i) {
+			
+		}
+	}
+	
+	static String ezDecrypt (String theWord) {
+		return ezEncrypt(theWord);
+	}
+}

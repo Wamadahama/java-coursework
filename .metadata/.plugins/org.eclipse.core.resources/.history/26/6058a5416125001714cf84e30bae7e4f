@@ -1,0 +1,16 @@
+
+public class StringRecognizer {
+
+	/**
+	 * precondition: none
+	 * @param s: input string for testing
+	 * @return true is s is in the language L = {w$w': w is a possibly empty string of characters
+	 * 			other than $, w' = reverse(w)}; otherwise return false.
+	 */
+	boolean recognizeString(String s){	
+		boolean answer = false;
+		
+		return answer;
+	}
+	
+}
